@@ -5,8 +5,8 @@ export default function Header() {
         <header>
             <ul>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/Dashboard">Stats</Link></li>
-                <li><a href="#">Schedule</a></li>
+                <li><Link to="/dashboard">Stats</Link></li>
+                <li><Link to="/schedule">Schedule</Link></li>
                 <li><a href="#">About</a></li>
             </ul>
         </header>

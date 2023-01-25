@@ -2,6 +2,7 @@ import Header from './components/Header'
 import Home from './pages/Home'
 import { Routes, Route } from 'react-router-dom'
 import Dashboard from './pages/Dashboard'
+import Schedule from './pages/Schedule'
 
 function App() {
 
@@ -10,7 +11,8 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/DashBoard' element={<Dashboard />} />
+        <Route path='/dashBoard' element={<Dashboard />} />
+        <Route path='/schedule' element={<Schedule />} />
       </Routes>
     </>
   )

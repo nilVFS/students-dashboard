@@ -99,6 +99,8 @@ section {
     font-size: 1.5em;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
 }
 
 .home-activity {
@@ -139,6 +141,8 @@ section {
 }
 
 .home-news-title {
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
     text-align: center;
     font-size: 2em;
 }
@@ -166,6 +170,8 @@ section {
 
 .news-content h4 {
     text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
     margin-bottom: 0.5em;
 }
 
@@ -216,7 +222,7 @@ tr:hover {
 }
 
 td:hover {
-    background-color: rgb(183, 76, 76);
+    background-color: rgba(96, 76, 183, 0.544);
 }
 
 th, td {
@@ -230,6 +236,7 @@ td {
 }
 
 th {
+    padding-inline: 0.5em;
     text-align: left;
 }
 
@@ -239,4 +246,60 @@ th {
 }
 .chart-wrapper h3 {
     text-align: center;
+}
+
+/* SCHEDULE */
+
+#schedule {
+    padding: 0;
+}
+
+.schedule-title {
+    padding-inline: 1rem;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.schedule-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25em, 35%));
+    grid-auto-rows: max-content;
+    height: 100%;
+    overflow-y: scroll;
+    gap: 1em;
+    padding: 1em 1em 5em;
+}
+
+.schedule-days {
+    box-sizing: content-box;
+}
+
+.schedule-days:hover {
+    box-shadow: 0 0 0 0.1em rgba(0, 0, 0, 0.3);
+}
+
+.schedule-days h3 {
+    text-decoration: underline;
+    text-underline-offset: 0.35em;
+    margin-bottom: 0.5em;
+}
+
+.schedule-day {
+    height: 3em;
+    background-color: rgba(240, 240, 240, 1);
+    width: 100%;
+    margin-block: 0.35em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1em;
+}
+
+.schedule-day:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+li:hover {
+    border-bottom: 1px solid black;
 }
